@@ -135,3 +135,9 @@ if [ -f "$FILE" ]; then
 else 
     echo "0" > $FILE
 fi
+
+#Banner
+#Cowsay + Fortune if installed
+if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
+   fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1)
+fi
