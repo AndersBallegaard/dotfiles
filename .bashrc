@@ -122,7 +122,7 @@ alias mkdir='mkdir -p'
 #Update dot files
 FILE=~/.count
 if [ -f "$FILE" ]; then
-
+    echo $(($startup_count++ + 1)) > $FILE
     typeset -i startup_count=$(cat $FILE)
     if [ $startup_count -gt 10 ]
     then
@@ -130,7 +130,7 @@ if [ -f "$FILE" ]; then
         git pull
         echo "0" > $FILE
     fi
-    echo $(($startup_count++ + 1)) > $FILE 
+     
 else 
     echo "0" > $FILE
 fi
