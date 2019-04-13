@@ -120,4 +120,17 @@ alias mkdir='mkdir -p'
 
 
 #Update dot files
-git pull
+FILE=~/.count
+if [ -f "$FILE" ]; then
+
+    typeset -i startup_count=$(cat $FILE)
+    if [ $startup_count -gt 10 ]
+    then
+        echo "Checking for updates"
+        git pull
+        echo "0" > $FILE
+    fi
+    echo $(($startup_count++ + 1)) > $FILE 
+else 
+    echo "0" > $FILE
+fi
