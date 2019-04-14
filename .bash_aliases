@@ -1,0 +1,11 @@
+alias i='grep'
+alias ll='ls -alFh'
+alias la='ls -Ah'
+alias l='ls -CFh'
+alias vi='nano'
+alias sl='ls'
+alias mkdir='mkdir -p'
+alias update='sudo apt update || sudo apt upgrade -y'
+alias lsa='cat ~/.bash_aliases | grep -i "alias"'
+alias load='source ~/.bashrc'
+
