@@ -2,9 +2,13 @@
 ### My personal dot files for linux systems
 
 ## Install
-Install git, fortune, and cowsay
+Install Dependencys
 ```bash
+#Needed
 sudo apt install git fortune cowsay
+
+#Recommended
+sudo apt install screen nano
 ```
 
 Download and install dotfiles to home directory
