@@ -109,15 +109,6 @@ md () {
     cd $1
 }
 
-#Aliases
-alias i='grep'
-alias ll='ls -alFh'
-alias la='ls -Ah'
-alias l='ls -CFh'
-alias vi='nano'
-alias sl='ls'
-alias mkdir='mkdir -p'
-
 
 #Update dot files
 FILE=~/.count
@@ -141,3 +132,6 @@ fi
 if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
    fortune | cowsay -f $(ls /usr/share/cowsay/cows/ | shuf -n1)
 fi
+
+#Inform user about aliases
+echo "Type 'lsa' to show configured aliases"

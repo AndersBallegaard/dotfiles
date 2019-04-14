@@ -22,5 +22,5 @@ source ~/.bashrc
 The files are automaticly updated every 10 startups.
 If you want to manually update type the following
 ```bash
-update
+update-dotfiles
 ```
