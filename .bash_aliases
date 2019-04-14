@@ -8,4 +8,4 @@ alias mkdir='mkdir -p'
 alias update='sudo apt update || sudo apt upgrade -y'
 alias lsa='cat ~/.bash_aliases | grep -i "alias"'
 alias load='source ~/.bashrc'
-
+alias update='cd ~ && git pull'
