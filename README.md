@@ -14,6 +14,7 @@ sudo apt install screen nano
 Download and install dotfiles to home directory
 ```bash
 cd ~
+# Don't use git clone, git will get angry
 git init
 git remote add origin https://github.com/AndersBallegaard/dotfiles.git
 git reset --hard origin/master
