@@ -135,3 +135,7 @@ echo "Type 'lsa' to show configured aliases"
 
 # Env vars
 export EDITOR=nano
+
+#PATH
+export GO_PATH=~/go
+export PATH=$PATH:$GO_PATH/bin
