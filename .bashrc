@@ -130,7 +130,7 @@ if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
 fi
 
 #Inform user about aliases
-echo "Type 'lsa' to show configured aliases"
+echo "Type 'alias' to show configured aliases"
 
 
 # Env vars
