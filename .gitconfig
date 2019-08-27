@@ -1,3 +1,5 @@
 [user]
 	name = Anders Ballegaard
 	email = anderstb@hotmail.dk
+[core]
+	autocrlf = input
