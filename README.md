@@ -17,7 +17,8 @@ cd ~
 # Don't use git clone, git will get angry
 git init
 git remote add origin https://github.com/AndersBallegaard/dotfiles.git
-git reset --hard origin/master
+mv .bashrc .bashrc.backup
+git pull https://github.com/AndersBallegaard/dotfiles.git
 git branch --set-upstream-to=origin/master master
 git pull
 source ~/.bashrc
