@@ -135,6 +135,7 @@ echo "Type 'alias' to show configured aliases"
 
 # Env vars
 export EDITOR=nano
+export ANSIBLE_NOCOWS=1
 
 #PATH
 export GO_PATH=~/go
